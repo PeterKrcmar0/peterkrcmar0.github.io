@@ -1,0 +1,342 @@
+@font-face{
+	font-family: segoeUIlight;
+	src: url('font/SEGOEUIL.ttf'), url('SEEGOEUIL.oet');
+}
+
+@font-face{
+	font-family: Pentagon;
+	src: url('font/Pentagon.ttf');
+}
+
+html, body, #container{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #677481;
+}
+
+#container{
+	color: white;
+	font-family: segoeUIlight;
+	margin: 0 auto;
+}
+
+div.content{
+	width: 100%;
+	color: black;
+}
+
+/*--- BURGER ---*/
+
+#burger{
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	height: 50px;
+	width: 60px;
+	opacity: 0.7;
+	-webkit-transition: 0.6s;
+}
+
+#burger:hover{
+	height: 60px;
+	width: 70px;
+	opacity: 1;
+	-webkit-transform: rotate(360deg);
+}
+
+/*--- HEADER ---*/
+
+#header{
+	position: fixed;
+	top: 0;
+	height: 100px;
+	background: #2c3e50;
+	width: 100%;
+	z-index: 9001;
+}
+
+#menu{
+	float: right;
+	height: 100%;
+	margin-right: 50px;
+}
+
+#menu ul{
+	margin: 0;
+	height: 100%;
+	padding: 0;
+}
+
+#menu ul li{
+	list-style: none;
+	float: left;
+	padding: 0 20px;
+	background: #2c3e50;
+	line-height: 100px;
+}
+
+li:hover{
+	position: relative;
+	top: 5px;
+	background-color: #1F3143 !important;
+}
+
+a, a:visited{
+	color: white;
+	text-decoration: none;
+	padding: 15px 0;
+}
+
+li a.active{
+	border-bottom: 1px solid white;
+}
+
+h1{
+	font-family: Pentagon;
+	letter-spacing: 6px;
+	float: left;
+	margin: 0;
+	line-height: 150px;
+	font-size: 4em;
+	background: url('burger.png') center no-repeat;
+	/*background-color: #2c3e50;*/
+	/*border-radius: 0 0 40% 0;*/
+	padding: 0 50px 0 50px;
+	-webkit-transform: rotate(-5deg);
+}
+
+h1:hover{
+	opacity: 1;
+}
+
+h1 a{
+	color: rgba(255,255,255,0.8) !important;
+	text-shadow: 0 0 1px grey;
+}
+
+h1:hover a{
+	color: white !important;
+}
+
+h2{
+	margin: 50px 50px 10px;
+	font-size: 3em;
+}
+
+h4{
+	margin: 10px 50px 50px 60px;
+	color: silver;
+	font-size: 1.4em;
+}
+
+h3{
+	-webkit-transition: text-decoration .3s linear;
+}
+
+/*--- HOME ---*/
+
+#home{
+	background: url('http://images.fondecranhd.net/rivers/0b43ii4mtgp.jpg') no-repeat bottom right !important;
+	height: 900px;
+	margin-top: 100px;
+}
+
+#home div{
+	float: right;
+	width: 400px;
+	background: rgba(255,255,255,0.8);
+	padding: 20px;
+	margin-right: 50px;
+	text-align: justify;
+}
+
+/*--- TEAM ---*/
+
+#team{
+	height: 1000px;
+	background: #34495e;
+	border: 1px solid transparent;
+}
+
+table.team{
+	margin: auto;
+	border-spacing: 10px 15px;
+}
+
+td.firstcell, td.lastcell{
+	height: 120px;
+	width: 120px;
+}
+
+td.middlecell{
+	display: block;
+	height: 120px;
+	width: 500px;
+	background: #c0c0c0;
+	overflow: hidden;
+}
+
+td.middlecell:hover{
+	background: #e0e0e0;
+}
+
+td.middlecell p{
+	text-align: center;
+	-webkit-transition: margin-top 0.5s;
+}
+
+td.middlecell:hover p{
+	margin-top: -110px;
+}
+
+td.middlecell b{
+	display: block;
+	line-height: 85px;
+	size: 1.5em;
+	margin-bottom: 25px;
+}
+
+td.round{
+	border-radius: 50%;	
+	background: url('mwaaaa.png') no-repeat center;
+	background-size: 100%;
+	-webkit-transition: background-size 0.2s ease-in-out;
+}
+
+td.round:hover{
+	background-size: 110%;
+}
+
+/*--- NEWS ---*/
+
+#news{
+	height: 1000px;
+	background: #486683;
+	border: 1px solid transparent;
+}
+
+#news a.news{
+	color: black;
+}
+
+a.news:hover h3{
+	text-decoration: underline;
+}
+
+.news_box{
+	margin: auto;
+	margin-bottom: 2px;
+	height: 150px;
+	width: 500px;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	background: #f3f3f3;
+}
+
+.news_box_front{
+	position: absolute;
+	display: block;
+	height: 150px;
+	width: 500px;
+	background: rgba(36,104,172,0.3);
+	-webkit-transition: right .5s ease-in-out;
+}
+
+.news_box:hover .news_box_front{
+	right: -500px;
+}
+
+.news_box_text{
+	margin: 50px;
+}
+
+/*--- CONTACT ---*/
+
+#contact{
+	height: 1000px;
+	background: #648eb7;
+	border: 1px solid transparent;
+}
+
+.contact_zone{
+	margin: auto;
+	width: 500px;
+}
+
+input, textarea{
+	margin: 10px;
+	padding: 10px;
+	width: 100%;
+	font-family: segoeUIlight;
+	font-size: 1.5em;
+	background: #fafafa;
+	border: none;
+	outline: none;
+	max-height: 500px;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+input:hover, input:focus, textarea:hover, textarea:focus{ 
+	background: #ffffff; }
+	
+input[type=submit]:hover{ 
+	background: #486683; color: white; }
+	
+/*--- SHOP ---*/
+
+#shop{
+	height: 1000px;
+	background: #7EA8D1;
+	border: 1px solid transparent;
+}
+
+#pic1{
+	background: url('../img/tshirt nina/tshirt1.jpg') no-repeat center;
+}
+
+#pic2 {
+	background: url('../img/tshirt nina/tshirt2.jpg') no-repeat center;
+}
+
+table.shop{
+	margin: auto;
+	border-spacing: 15px;
+}
+
+td.zoom{
+	height: 500px;
+	width: 250px;
+	margin-left: 50px;
+	background-size: 100% !important;
+	-webkit-transition: 0.6s;
+	-webkit-transition-delay: 0.2s;
+}
+
+td.zoom:hover{
+	background-size: 150% !important;
+	height: 500px;
+	width: 500px;
+}
+
+/*--- FOOTER ---*/
+
+#footer{
+	height: 250px;
+	background: #7f8c8d;
+	text-align: center;
+	padding-top: 50px;
+}
+
+#footer img{
+	-webkit-filter: grayscale(100%);
+	height: 50px;
+	margin: 10px;
+}
+
+#footer img:hover{
+	-webkit-filter: none;
+}
