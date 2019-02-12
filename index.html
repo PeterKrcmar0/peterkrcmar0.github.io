@@ -3,72 +3,61 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="style.css" />
-		<title>Gamesquad</title>
+		<title>Peter Krcmar</title>
 		<script src="jquery.js"></script>
-		<script src="jquery.scrollTo-1.4.3.1-min.js"></script>
-		<script src="processing.min.js"></script>
-		<script src="script.js"></script>
+		<script src="p5.min.js"></script>
+		<script src="mySketch.js"></script>
+		<script>function show(param_div_id) {document.getElementById('content').innerHTML = document.getElementById(param_div_id).innerHTML;}</script>
 	</head>
 
     <body>
     <div id="container">
-		<a href="#" class="home"><img id="burger" src="burger.png" name="" alt="" /></a>
 		<div id="header">
-		<h1><a href="#" class="home">Pete's Burgers</a></h1>
+		<a href="#" class="home" onclick="window.location.reload()"><h1></h1></a>
 			<div id="menu">
 				<ul>
-					<li class="1"><a href="#" class="home">Home</a></li>
-					<li class="2"><a href="#" class="team">Comité</a></li>
-					<li class="3"><a href="#" class="news">News</a></li>
-					<li class="4"><a href="#" class="contact">Contact</a></li>
-					<li class="5"><a href="#" class="shop">Boutique</a></li>
+					<li class="1"><a href="#" class="about" onclick="show('aaa')">about</a></li>
+					<li class="2"><a href="#" class="projects" onclick="show('bbb')">projects</a></li>
+					<li class="3"><a href="#" class="contact" onclick="show('ccc')">contact</a></li>
 				</ul>
 			</div>
 		</div>
-		<div id="home" class="content">
-			<div>Yeey there's text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue purus nec cursus facilisis. Integer vulputate malesuada gravida. Curabitur volutpat scelerisque enim, ac aliquet felis dapibus et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla et cursus odio. Nam id odio rhoncus sem rhoncus consectetur eu nec dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce dignissim blandit tempor. Nullam tortor enim, mattis ut diam a, elementum commodo est. Phasellus tempus a mauris sed scelerisque. Donec consectetur erat vel ligula adipiscing, adipiscing egestas orci consectetur.
+		<div id="content">
+			<div id="canvasContainer"></div>
+		</div>
+		
+		<div id="aaa" style="display:none">
+		<div id="about">
+		<div>
+			<h2>About me</h2>
+			<p>Currently studying computer science at EPFL.</p>
 			</div>
 		</div>
-		<div id="team" class="content">
-			<h2>Comité</h2>
-			<table class="team">
-				<tr>
-					<td class="firstcell round">
-					</td><td class="middlecell"><p><b>Peter Krcmar</b><br>Le seul et l'unique.<br>Fondateur de Pete's Burgers.<br>A obtenu son master en burgers en 2015 et depuis déguste les meilleurs burgers de la région.</p></td>
-					<td class="lastcell borderless"></td>
-				</tr>
-				<tr>
-					<td class="firstcell borderless"></td>
-					<td class="middlecell"><p><b>Nina Perez</b><br>La reine des burgers.<br>Membre honoraire.<br>Experte en cuisine hispanique.</p></td>
-					<td class="lastcell round"></td>
-				</tr>
-			</table>
-			<canvas data-processing-sources="hello-web.pde"></canvas>
 		</div>
-		<div id="news" class="content">
-			<h2>News</h2>
-				<div class="news_box"><a href="#" class="news">
+		<div id="bbb" style="display:none">
+			<h2>Projects</h2>
+				<div class="project_box">
 					<span class="news_box_front"></span>
 					<div class="news_box_text">
 						<h3>News 1</h3>
 						<p>Random Text...</p>
 					</div>
-				</a></div>
-				<div class="news_box">
+				</div>
+				<div class="project_box">
 					<span class="news_box_front"></span>
 					<div class="news_box_text">
 						<h3>News 2</h3>
 						<p>Random Text...</p>
 					</div>
 				</div>
-				<div class="news_box">
+				<div class="project_box">
 					<span class="news_box_front"></span>
 					<div class="news_box_text">
 						<h3>News 3</h3>
 						<p>Random Text...</p>
 					</div>
 				</div>
-				<div class="news_box">
+				<div class="project_box">
 					<span class="news_box_front"></span>
 					<div class="news_box_text">
 						<h3>News 4</h3>
@@ -76,30 +65,12 @@
 					</div>
 				</div>
 		</div>
-		<div id="contact" class="content">
+		<div id="ccc" style="display:none">
 			<h2>Contact</h2>
-			<h4>Une question, une requête ou une simple envie de discuter ?</h4>
-			<p class="contact_zone"><input type="text" placeholder="Votre nom" /><br />
-			<textarea rows="4" cols="50" placeholder="Votre message ..."></textarea>
-			<input type="submit" value="Envoyer" /></p>
+			<p>Any questions? Requests? Or just wanna chat? You can find me on social media or send me a 📧 at <i>peterkrcmar@hotmail.com</i>.</p>
 		</div>
-		<div id="shop" class="content">
-			<h2>Boutique</h2>
-			<h4>Découvrez notre nouvelle collection de printemps 2017 !</h4>
-			<table class="shop">
-				<tr>
-					<td class="zoom" id="pic1"></td>
-					<td class="zoom" id="pic2"></td>
-					<td class="zoom" id="pic1"></td>
-					<td class="zoom" id="pic2"></td>
-					<td class="zoom" id="pic2"></td>
-					<td class="zoom" id="pic2"></td>
-					<td class="zoom" id="pic1"></td>
-					<td class="zoom" id="pic2"></td>
-				</tr>
-			</table>
-		</div>
-		<div id="footer" class="content">
+		
+		<div id="footer">
 			<p><h3>Suivez nous sur:</h3>
 			<a href="#"><img class="desaturate" src="PNG/facebook.png" alt="" /></a>
 			<a href="#"><img class="desaturate" src="PNG/youtube.png" alt="" /></a>
