@@ -1,14 +1,4 @@
 @font-face{
-	font-family: segoeUIlight;
-	src: url('font/SEGOEUIL.ttf'), url('SEEGOEUIL.oet');
-}
-
-@font-face{
-	font-family: Pentagon;
-	src: url('font/Pentagon.ttf');
-}
-
-@font-face{
 	font-family: coves;
 	src: url('font/CovesLight.otf');
 }
@@ -24,32 +14,12 @@ html, body, #container{
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	background: #677481;
+	color: white;
+	font-family: coves;
 }
 
 #container{
-	color: white;
-	font-family: coves;
 	margin: 0 auto;
-}
-
-/*--- BURGER ---*/
-
-#burger{
-	position: fixed;
-	right: 50px;
-	bottom: 50px;
-	height: 50px;
-	width: 60px;
-	opacity: 0.7;
-	-webkit-transition: 0.6s;
-}
-
-#burger:hover{
-	height: 60px;
-	width: 70px;
-	opacity: 1;
-	-webkit-transform: rotate(360deg);
 }
 
 /*--- HEADER ---*/
@@ -82,7 +52,7 @@ html, body, #container{
 	line-height: 100px;
 }
 
-li:hover{
+#menu ul li:hover{
 	position: relative;
 	top: 5px;
 	background-color: #1F3143 !important;
@@ -107,7 +77,7 @@ h1{
 }
 
 h2{
-	margin: 50px 50px 10px;
+	margin: 0;
 	font-size: 3em;
 }
 
@@ -127,75 +97,6 @@ h3{
 	background: #000;
 	height: 100%;
 }
-
-/*--- ABOUT ---*/
-
-#about{
-	background: url('me.jpg') no-repeat center;
-	background-size: cover;
-	height: 100%;
-}
-
-#about div{
-	background: rgba(0,0,0,0.5);
-}
-
-td.round{
-	border-radius: 50%;	
-	background: url('mwaaaa.png') no-repeat center;
-	background-size: 100%;
-	-webkit-transition: background-size 0.2s ease-in-out;
-}
-
-td.round:hover{
-	background-size: 110%;
-}
-
-/*--- PROJECTS ---*/
-
-.project_box{
-	border: 1px solid black;
-	width: 200px;
-	float: left;
-	padding: 50px;
-}
-
-/*--- CONTACT ---*/
-
-#contact{
-	height: 1000px;
-	background: #648eb7;
-	border: 1px solid transparent;
-}
-
-.contact_zone{
-	margin: auto;
-	width: 500px;
-}
-
-input, textarea{
-	margin: 10px;
-	padding: 10px;
-	width: 100%;
-	font-family: segoeUIlight;
-	font-size: 1.5em;
-	background: #fafafa;
-	border: none;
-	outline: none;
-	max-height: 500px;
-	max-width: 100%;
-	box-sizing: border-box;
-}
-
-input:hover, input:focus, textarea:hover, textarea:focus{ 
-	background: #ffffff; }
-	
-input[type=submit]:hover{ 
-	background: #486683; color: white; }
-	
-/*--- SHOP ---*/
-
-
 
 /*--- FOOTER ---*/
 

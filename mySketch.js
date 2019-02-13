@@ -71,7 +71,7 @@ function mountain(xx, yy) {
 	fill(colorMountain);
 	triangle(0, height, width/6, height - 300, width/4, height);
 	fill(colorMountain2);
-	triangle(250, height, width/6, height - 300, width/4, height);
+	triangle(width/6, height, width/6, height - 300, width/4, height);
 	pop();
 }
 
@@ -82,8 +82,10 @@ function drawClouds() {
 }
 
 function mousePressed() {
-	x = 0;
-	animation = !animation;
+	if(mouseInsideCanvas()) {
+		x = 0;
+		animation = !animation;
+	}
 }
 
 function mouseInsideCanvas() {

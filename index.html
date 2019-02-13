@@ -4,7 +4,6 @@
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="style.css" />
 		<title>Peter Krcmar</title>
-		<script src="jquery.js"></script>
 		<script src="p5.min.js"></script>
 		<script src="mySketch.js"></script>
 		<script>function show(param_div_id) {document.getElementById('content').innerHTML = document.getElementById(param_div_id).innerHTML;}</script>
@@ -13,12 +12,12 @@
     <body>
     <div id="container">
 		<div id="header">
-		<a href="#" class="home" onclick="window.location.reload()"><h1></h1></a>
+		<a href="#" class="home"><h1></h1></a>
 			<div id="menu">
 				<ul>
-					<li class="1"><a href="#" class="about" onclick="show('aaa')">about</a></li>
-					<li class="2"><a href="#" class="projects" onclick="show('bbb')">projects</a></li>
-					<li class="3"><a href="#" class="contact" onclick="show('ccc')">contact</a></li>
+					<li class="1"><a href="/about" class="about">about</a></li>
+					<li class="2"><a href="projects.html" class="projects">projects</a></li>
+					<li class="3"><a href="contact.html" class="contact">contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -26,56 +25,13 @@
 			<div id="canvasContainer"></div>
 		</div>
 		
-		<div id="aaa" style="display:none">
-		<div id="about">
-		<div>
-			<h2>About me</h2>
-			<p>Currently studying computer science at EPFL.</p>
-			</div>
-		</div>
-		</div>
-		<div id="bbb" style="display:none">
-			<h2>Projects</h2>
-				<div class="project_box">
-					<span class="news_box_front"></span>
-					<div class="news_box_text">
-						<h3>News 1</h3>
-						<p>Random Text...</p>
-					</div>
-				</div>
-				<div class="project_box">
-					<span class="news_box_front"></span>
-					<div class="news_box_text">
-						<h3>News 2</h3>
-						<p>Random Text...</p>
-					</div>
-				</div>
-				<div class="project_box">
-					<span class="news_box_front"></span>
-					<div class="news_box_text">
-						<h3>News 3</h3>
-						<p>Random Text...</p>
-					</div>
-				</div>
-				<div class="project_box">
-					<span class="news_box_front"></span>
-					<div class="news_box_text">
-						<h3>News 4</h3>
-						<p>Random Text...</p>
-					</div>
-				</div>
-		</div>
-		<div id="ccc" style="display:none">
-			<h2>Contact</h2>
-			<p>Any questions? Requests? Or just wanna chat? You can find me on social media or send me a 📧 at <i>peterkrcmar@hotmail.com</i>.</p>
-		</div>
-		
 		<div id="footer">
-			<p><h3>Suivez nous sur:</h3>
-			<a href="#"><img class="desaturate" src="PNG/facebook.png" alt="" /></a>
-			<a href="#"><img class="desaturate" src="PNG/youtube.png" alt="" /></a>
-			<a href="#"><img class="desaturate" src="PNG/twitter.png" alt="" /></a>
-			<br>Site créé par Peter Krcmar &copy;
+			<p><h3>You can also find me on:</h3>
+			<a href="#"><img class="desaturate" src="PNG/facebook_round.png" alt="" /></a>
+			<a href="#"><img class="desaturate" src="PNG/snapchat_round.png" alt="" /></a>
+			<a href="#"><img class="desaturate" src="PNG/instagram_round.png" alt="" /></a>
+			<a href="#"><img class="desaturate" src="PNG/linkedin_round.png" alt="" /></a>
+			<br>&copy; Peter Krcmar - 2019
 			</p>
 		</div>
 	</div>

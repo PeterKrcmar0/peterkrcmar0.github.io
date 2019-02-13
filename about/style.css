@@ -1,0 +1,39 @@
+/*--- ABOUT ---*/
+
+#container{
+	background: url('me.jpg') no-repeat center;
+	background-size: cover;
+}
+
+#about{
+	height: 100%;
+}
+
+.graybox {
+	height: 100%;
+	padding: 100px;
+	background: rgba(0,0,0,0.3);
+}
+
+.graybox ul li{
+	list-style: none;
+}
+
+.flag{
+	height: 50px;
+	width: 50px;
+	float: left;
+}
+
+.graybox p{
+	margin: 0 auto;
+	text-align: justify;
+	font-size: 2em;
+}
+
+.smallbox{
+	padding: 10px;
+	margin: 10px 5px 0 5px;
+	background: rgba(0,0,0,0.5);
+	float: left;
+}

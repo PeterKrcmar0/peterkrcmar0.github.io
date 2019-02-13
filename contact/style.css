@@ -1,0 +1,217 @@
+@font-face{
+	font-family: segoeUIlight;
+	src: url('font/SEGOEUIL.ttf'), url('SEEGOEUIL.oet');
+}
+
+@font-face{
+	font-family: Pentagon;
+	src: url('font/Pentagon.ttf');
+}
+
+@font-face{
+	font-family: coves;
+	src: url('font/CovesLight.otf');
+}
+
+@font-face{
+	font-family: coves;
+	src: url('font/CovesBold.otf');
+	font-weight: bold;
+}
+
+html, body, #container{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #677481;
+}
+
+#container{
+	color: white;
+	font-family: coves;
+	margin: 0 auto;
+}
+
+/*--- BURGER ---*/
+
+#burger{
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	height: 50px;
+	width: 60px;
+	opacity: 0.7;
+	-webkit-transition: 0.6s;
+}
+
+#burger:hover{
+	height: 60px;
+	width: 70px;
+	opacity: 1;
+	-webkit-transform: rotate(360deg);
+}
+
+/*--- HEADER ---*/
+
+#header{
+	position: fixed;
+	top: 0;
+	height: 100px;
+	width: 100%;
+	z-index: 9001;
+}
+
+#menu{
+	float: right;
+	height: 100%;
+	margin-right: 50px;
+}
+
+#menu ul{
+	margin: 0;
+	height: 100%;
+	padding: 0;
+}
+
+#menu ul li{
+	list-style: none;
+	float: left;
+	padding: 0 20px;
+	background: #2c3e50;
+	line-height: 100px;
+}
+
+li:hover{
+	position: relative;
+	top: 5px;
+	background-color: #1F3143 !important;
+}
+
+a, a:visited{
+	color: white;
+	text-decoration: none;
+	padding: 15px 0;
+}
+
+li a.active{
+	border-bottom: 1px solid white;
+}
+
+h1{
+	background: url('banner.svg') no-repeat;
+	float: left;
+	margin: 0;
+	width: 650px;
+	height: 100px;
+}
+
+h2{
+	margin: 50px 50px 10px;
+	font-size: 3em;
+}
+
+h4{
+	margin: 10px 50px 50px 60px;
+	color: silver;
+	font-size: 1.4em;
+}
+
+h3{
+	-webkit-transition: text-decoration .3s linear;
+}
+
+/*--- CONTENT ---*/
+
+#content{
+	background: #000;
+	height: 100%;
+}
+
+/*--- ABOUT ---*/
+
+#about{
+	background: url('me.jpg') no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+#about div{
+	background: rgba(0,0,0,0.5);
+}
+
+td.round{
+	border-radius: 50%;	
+	background: url('mwaaaa.png') no-repeat center;
+	background-size: 100%;
+	-webkit-transition: background-size 0.2s ease-in-out;
+}
+
+td.round:hover{
+	background-size: 110%;
+}
+
+/*--- PROJECTS ---*/
+
+.project_box{
+	border: 1px solid black;
+	width: 200px;
+	float: left;
+	padding: 50px;
+}
+
+/*--- CONTACT ---*/
+
+#contact{
+	height: 1000px;
+	background: #648eb7;
+	border: 1px solid transparent;
+}
+
+.contact_zone{
+	margin: auto;
+	width: 500px;
+}
+
+input, textarea{
+	margin: 10px;
+	padding: 10px;
+	width: 100%;
+	font-family: segoeUIlight;
+	font-size: 1.5em;
+	background: #fafafa;
+	border: none;
+	outline: none;
+	max-height: 500px;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+input:hover, input:focus, textarea:hover, textarea:focus{ 
+	background: #ffffff; }
+	
+input[type=submit]:hover{ 
+	background: #486683; color: white; }
+	
+/*--- SHOP ---*/
+
+
+
+/*--- FOOTER ---*/
+
+#footer{
+	height: 250px;
+	background: #7f8c8d;
+	text-align: center;
+	padding-top: 50px;
+}
+
+#footer img{
+	-webkit-filter: grayscale(100%);
+	height: 50px;
+	margin: 10px;
+}
+
+#footer img:hover{
+	-webkit-filter: none;
+}
