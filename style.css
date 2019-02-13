@@ -9,7 +9,7 @@
 	font-weight: bold;
 }
 
-html, body, #container{
+html, body{
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -20,6 +20,9 @@ html, body, #container{
 
 #container{
 	margin: 0 auto;
+	min-height: 100%;
+	color: white;
+	font-family: coves;
 }
 
 /*--- HEADER ---*/
@@ -35,7 +38,7 @@ html, body, #container{
 #menu{
 	float: right;
 	height: 100%;
-	margin-right: 50px;
+	font-size: 1.5em;
 }
 
 #menu ul{
@@ -47,25 +50,25 @@ html, body, #container{
 #menu ul li{
 	list-style: none;
 	float: left;
-	padding: 0 20px;
-	background: #2c3e50;
+	padding: 0 10px;
+	background: black;
 	line-height: 100px;
 }
 
 #menu ul li:hover{
 	position: relative;
-	top: 5px;
-	background-color: #1F3143 !important;
+	top: 10px;
 }
 
-a, a:visited{
+#menu a, #menu a:visited{
 	color: white;
 	text-decoration: none;
 	padding: 15px 0;
 }
 
-li a.active{
-	border-bottom: 1px solid white;
+#menu li a.active{
+	font-weight: bold;
+	border-top: 3px solid white;
 }
 
 h1{
@@ -93,26 +96,18 @@ h3{
 
 /*--- CONTENT ---*/
 
-#content{
+#canvasContainer{
 	background: #000;
 	height: 100%;
+	overflow:hidden;
 }
 
 /*--- FOOTER ---*/
 
 #footer{
-	height: 250px;
-	background: #7f8c8d;
+	height: 100px;
+	background: black;
 	text-align: center;
-	padding-top: 50px;
-}
-
-#footer img{
-	-webkit-filter: grayscale(100%);
-	height: 50px;
-	margin: 10px;
-}
-
-#footer img:hover{
-	-webkit-filter: none;
+	padding: 50px;
+	color: #aaa;
 }

@@ -3,37 +3,41 @@
 #container{
 	background: url('me.jpg') no-repeat center;
 	background-size: cover;
+	background-attachment: fixed;
+	overflow: auto;
+	padding-bottom: 10px;
 }
 
 #about{
-	height: 100%;
-}
-
-.graybox {
-	height: 100%;
 	padding: 100px;
-	background: rgba(0,0,0,0.3);
 }
 
-.graybox ul li{
+#about ul li{
 	list-style: none;
 }
 
-.flag{
+img.flag{
 	height: 50px;
 	width: 50px;
-	float: left;
 }
 
-.graybox p{
+#about p{
 	margin: 0 auto;
-	text-align: justify;
+	//text-align: justify;
 	font-size: 2em;
 }
 
 .smallbox{
+	float: left;
 	padding: 10px;
 	margin: 10px 5px 0 5px;
-	background: rgba(0,0,0,0.5);
-	float: left;
+	color: black;
+	background: rgba(255,255,255,0.5);
+	width: 350px;
+	height: 350px;
+}
+
+.smallbox:hover{
+	background: rgba(150,50,50,0.5);
+	color: white;
 }
