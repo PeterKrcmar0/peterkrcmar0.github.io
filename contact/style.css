@@ -1,9 +1,10 @@
 #container{
-	background: linear-gradient(to bottom right, orange, red, red);
+	background: linear-gradient(to right, orange , purple);
 }
 
 #contact{
 	padding: 100px;
+	padding-top: 200px;
 	text-align: center;
 }
 
