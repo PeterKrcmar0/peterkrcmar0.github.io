@@ -35,43 +35,36 @@ html, body{
 	z-index: 9001;
 }
 
-#menu{
+.menu {
 	float: right;
 	height: 100%;
 	font-size: 1.5em;
-}
-
-#menu ul{
 	margin: 0;
-	height: 100%;
-	padding: 0;
+	text-align: center;
 }
 
-#menu ul li{
-	list-style: none;
-	float: left;
+.menu a, .menu:visited{
+	display: block;
 	padding: 0 10px;
 	background: black;
 	line-height: 100px;
-}
-
-#menu ul li:hover{
-	position: relative;
-	top: 10px;
-}
-
-#menu a, #menu a:visited{
 	color: white;
 	text-decoration: none;
-	padding: 15px 0;
 }
 
-#menu li a.active{
+.menu a:hover{
+	position: relative;
+	right: 10px;
+}
+
+.menu a.active{
 	font-weight: bold;
-	border-top: 3px solid white;
+	border-left: 10px solid white;
+	//background: white;
+	//color: black;
 }
 
-h1{
+a.home {
 	background: url('banner.svg') no-repeat;
 	float: left;
 	margin: 0;
@@ -79,19 +72,23 @@ h1{
 	height: 100px;
 }
 
+/* If screen is too small, change the header appearance */
+@media screen and (max-width: 780px) {
+	a.home{
+		background: url('banner-small.svg') no-repeat;
+		width: 372px;
+	}
+}
+
 h2{
 	margin: 0;
+	margin-bottom: 20px;
 	font-size: 3em;
 }
 
-h4{
-	margin: 10px 50px 50px 60px;
-	color: silver;
-	font-size: 1.4em;
-}
-
 h3{
-	-webkit-transition: text-decoration .3s linear;
+	margin: 0;
+	font-size: 3em;
 }
 
 /*--- CONTENT ---*/

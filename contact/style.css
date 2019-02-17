@@ -20,7 +20,9 @@
 
 #contact p{
 	text-align: center;
+	width: 80%;
 	font-size: 2em;
+	margin: 0 auto;
 }
 
 #social{
